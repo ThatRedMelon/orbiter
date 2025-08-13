@@ -17,6 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         architecture: [x64, x86]
+        os: [windows-2019]
     uses: ./.github/workflows/reusable-build.yml
     with:
       os: ${{ matrix.os }}
